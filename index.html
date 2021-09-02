@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 7</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 30px;
+        }
+        .container{
+            width: 100%;
+            padding: 15px;
+        }
+        .header{
+            height: 60px;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-bottom: 12px;
+        }
+        .banner{
+            height: 300px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-bottom: 12px;
+        }
+        h4{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .section1{
+            width: 100%;
+            margin: 12px;
+        }
+        #section1::after {
+        content: "";
+        display: block;
+        clear: both;
+        }
+        .circle{
+            width: 250px;
+            height: 250px;
+            background-color: goldenrod;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            margin-left: 55px;
+            margin-bottom: 10px;
+        }
+        #section2{
+            margin: 12px;
+        }
+        #section2::after {
+        content: "";
+        display: block;
+        clear: both;
+        }
+        .left{
+            width: 49%;
+            height: 396px;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 18px;
+            color: white;
+            float: left;
+        }
+        .right{
+            width: 48%;
+            height: 400px;
+            float: right;
+        }
+        .part{
+            height: 120px;
+            margin-right: 15px;
+            margin-top: 18px;
+            background-color: tomato;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-bottom: 10px;
+        }
+        #section3 {
+            float: left;
+            width: 100%;
+            margin: 15px ;
+        }
+        #section3::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .box {
+            margin-top: 15px;
+            width: 20%;
+            height: 300px;
+            float: left;
+            margin-left: 50px;
+            background-color: orangered;
+        }
+        .section4{
+            margin: 12px;
+        }
+        .footer{
+            height: 60px;
+            background-color: plum;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="banner">Banner</div>
+        <div class="section1">
+            <h4>Section-1</h4>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <h4>Section-2</h4>
+        </div>
+        <div id="section2">
+            <div class="left">Main Content</div>
+            <div class="right">
+                <div class="part">Article-1</div>
+                <div class="part">Article-2</div>
+                <div class="part">Article-3</div>
+            </div>   
+        </div>
+        <div id="section3">
+            <h4>Section-3</h4>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="section4">
+            <h4>Section-4</h4>
+            <div class="footer">Footer</div>
+        </div>
+    </div>
+</body>
+</html>
