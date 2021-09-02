@@ -7,7 +7,7 @@
     <title>Practical 7</title>
     <style>
         *{
-            padding: 0;
+            padding: 10px;
             margin: 0;
             box-sizing: border-box;
             font-size: 30px;
@@ -38,71 +38,45 @@
             margin-top: 20px;
             text-align: center;
         }
-        .section1{
-            width: 100%;
-            margin: 12px;
-        }
-        #section1::after {
-        content: "";
-        display: block;
-        clear: both;
+        #section1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .circle{
             width: 250px;
             height: 250px;
             background-color: goldenrod;
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             float: left;
-            margin-left: 55px;
+            margin: 20px;
             margin-bottom: 10px;
-        }
-        #section2{
-            margin: 12px;
-        }
-        #section2::after {
-        content: "";
-        display: block;
-        clear: both;
         }
         .left{
             width: 49%;
-            height: 396px;
+            height: 370px;
+            margin-top: 10px;
             background-color: grey;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 18px;
             color: white;
             float: left;
         }
-        .right{
-            width: 48%;
-            height: 400px;
-            float: right;
-        }
         .part{
+            width: 49%;
             height: 120px;
-            margin-right: 15px;
-            margin-top: 18px;
             background-color: tomato;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
-            margin-bottom: 10px;
+            float: right;
+            margin-bottom: 5px;
         }
-        #section3 {
-            float: left;
+        .section3{
             width: 100%;
-            margin: 15px ;
-        }
-        #section3::after {
-            content: "";
-            display: block;
-            clear: both;
+            float:left;
         }
         .box {
             margin-top: 15px;
@@ -113,7 +87,8 @@
             background-color: orangered;
         }
         .section4{
-            margin: 12px;
+            width: 100%;
+            float: left;
         }
         .footer{
             height: 60px;
@@ -127,17 +102,16 @@
     </style>
 </head>
 <body>
-    <div class="container">
         <div class="header">Header</div>
         <div class="banner">Banner</div>
-        <div class="section1">
-            <h4>Section-1</h4>
+        <h4>Section-1</h4>
+        <div id="section1">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
-            <h4>Section-2</h4>
         </div>
+        <h4>Section-2</h4>
         <div id="section2">
             <div class="left">Main Content</div>
             <div class="right">
@@ -146,13 +120,13 @@
                 <div class="part">Article-3</div>
             </div>   
         </div>
-        <div id="section3">
-            <h4>Section-3</h4>
+        <div class="section3">
+            <h4>Section 3</h4>
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
-        </div>
+        </div>   
         <div class="section4">
             <h4>Section-4</h4>
             <div class="footer">Footer</div>
